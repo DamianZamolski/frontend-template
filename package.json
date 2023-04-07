@@ -17,16 +17,9 @@
   "release": {
     "branches": [
       "main"
-    ]
+    ],
+    "preset": "conventionalcommits"
   },
-  "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "conventionalcommits"
-      }
-    ]
-  ],
   "dependencies": {
     "react": "",
     "react-dom": ""
