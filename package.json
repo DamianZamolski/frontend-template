@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "packageManager": "pnpm@8.1.0",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,8 @@
     "build:image": "docker build .",
     "build": "pnmp run build:app && pnpm run build:image",
     "preview": "vite preview",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "semantic-release": "semantic-release"
   },
   "repository": "https://github.com/DamianZamolski/frontend-pipeline",
   "release": {
@@ -35,7 +36,7 @@
     "@types/react": "",
     "@types/react-dom": "",
     "@vitejs/plugin-react": "",
-    "semantic-release": "",
+    "semantic-release": "^21.0.1",
     "typescript": "",
     "vite": "",
     "vitest": "",
