@@ -12,6 +12,9 @@ devDependencies:
   '@semantic-release/git':
     specifier: github:semantic-release/git
     version: github.com/semantic-release/git/1c98860f1e12279cc86d32d00d999ced8d3502b2(semantic-release@21.0.1)
+  '@semantic-release/npm':
+    specifier: github:semantic-release/npm
+    version: github.com/semantic-release/npm/aaddc5c76bca7b199628630963072f9177ec3a6c(semantic-release@21.0.1)
   '@types/react':
     specifier: ''
     version: 18.0.28
@@ -5600,4 +5603,29 @@ packages:
       semantic-release: 21.0.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  github.com/semantic-release/npm/aaddc5c76bca7b199628630963072f9177ec3a6c(semantic-release@21.0.1):
+    resolution: {tarball: https://codeload.github.com/semantic-release/npm/tar.gz/aaddc5c76bca7b199628630963072f9177ec3a6c}
+    id: github.com/semantic-release/npm/aaddc5c76bca7b199628630963072f9177ec3a6c
+    name: '@semantic-release/npm'
+    version: 0.0.0-development
+    engines: {node: '>=18'}
+    peerDependencies:
+      semantic-release: '>=20.1.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 4.0.1
+      execa: 7.1.1
+      fs-extra: 11.1.1
+      lodash-es: 4.17.21
+      nerf-dart: 1.0.0
+      normalize-url: 8.0.0
+      npm: 9.6.4
+      rc: 1.2.8
+      read-pkg: 8.0.0
+      registry-auth-token: 5.0.2
+      semantic-release: 21.0.1
+      semver: 7.3.8
+      tempy: 3.0.0
     dev: true

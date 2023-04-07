@@ -19,10 +19,13 @@
     ],
     "preset": "conventionalcommits",
     "plugins": [
+      "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
-          "assets": ["package.json"],
+          "assets": [
+            "package.json"
+          ],
           "message": "release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "@semantic-release/git": "github:semantic-release/git",
+    "@semantic-release/npm": "github:semantic-release/npm",
     "@types/react": "",
     "@types/react-dom": "",
     "@vitejs/plugin-react": "",
