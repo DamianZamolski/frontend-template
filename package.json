@@ -11,7 +11,7 @@
     "build:image": "docker build .",
     "build": "pnmp run build:app && pnpm run build:image",
     "preview": "vite preview",
-    "release": "semantic-release",
+    "release": "semantic-release"
   },
   "release": {
     "branches": [
