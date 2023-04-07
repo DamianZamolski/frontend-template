@@ -5,12 +5,10 @@
   "packageManager": "pnpm@8.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "test": "vitest",
-    "build:app": "tsc && vite build",
-    "build:image": "docker build .",
-    "build": "pnmp run build:app && pnpm run build:image",
     "preview": "vite preview",
+    "dev": "vite",
+    "test": "tsc && vitest",
+    "build": "vite build && docker build .",
     "release": "semantic-release"
   },
   "release": {
