@@ -28,7 +28,8 @@
           ],
           "message": "release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
-      ]
+      ],
+      "@semantic-release/github"
     ]
   },
   "dependencies": {
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@semantic-release/git": "github:semantic-release/git",
+    "@semantic-release/github": "github:semantic-release/github",
     "@semantic-release/npm": "github:semantic-release/npm",
     "@types/react": "",
     "@types/react-dom": "",
