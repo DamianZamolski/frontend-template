@@ -3,26 +3,41 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@7.28.0",
   "scripts": {
     "dev": "vite",
     "test": "vitest",
     "build:app": "tsc && vite build",
     "build:image": "docker build .",
     "build": "pnmp run build:app && pnpm run build:image",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "semantic-release"
   },
+  "repository": "https://github.com/DamianZamolski/frontend-pipeline",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits"
+      }
+    ]
+  ],
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "",
+    "react-dom": ""
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^3.1.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0",
-    "vitest": "^0.29.2",
-    "xo": "^0.53.1"
+    "@types/react": "",
+    "@types/react-dom": "",
+    "@vitejs/plugin-react": "",
+    "semantic-release": "",
+    "typescript": "",
+    "vite": "",
+    "vitest": "",
+    "xo": ""
   }
 }

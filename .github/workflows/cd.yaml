@@ -10,8 +10,8 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
-          cache: 'pnpm'
+          node-version: "lts/*"
+          cache: "pnpm"
       - name: install dependencies
         run: pnpm install
       - name: test
@@ -20,3 +20,8 @@ jobs:
         run: pnpm build:app
       - name: build image
         run: pnpm build:image
+      - name: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm release
