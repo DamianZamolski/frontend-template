@@ -33,6 +33,7 @@
     "react-dom": ""
   },
   "devDependencies": {
+    "@semantic-release/git": "github:semantic-release/git",
     "@types/react": "",
     "@types/react-dom": "",
     "@vitejs/plugin-react": "",
