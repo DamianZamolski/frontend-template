@@ -28,6 +28,7 @@
     "@types/react": "",
     "@types/react-dom": "",
     "@vitejs/plugin-react": "",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "semantic-release": "^21.0.1",
     "typescript": "",
     "vite": "",
