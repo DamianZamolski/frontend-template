@@ -1,5 +1,5 @@
 {
-  "name": "dz-vite-cd",
+  "name": "frontend-template",
   "version": "8.0.0",
   "private": true,
   "packageManager": "pnpm@8.1.0",
@@ -17,6 +17,12 @@
     ],
     "preset": "conventionalcommits",
     "plugins": [
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits"
+        }
+      ],
       "@semantic-release/npm",
       [
         "@semantic-release/git",
@@ -24,13 +30,14 @@
           "assets": [
             "package.json"
           ],
-          "message": "release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
       "@semantic-release/github"
     ]
   },
   "dependencies": {
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "react": "",
     "react-dom": ""
   },
