@@ -18,6 +18,8 @@ jobs:
         run: pnpm test
       - name: build
         run: pnpm build
+      - name: specs
+        run: pnpm specs
       - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

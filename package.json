@@ -9,6 +9,7 @@
     "dev": "vite",
     "test": "tsc && vitest",
     "build": "vite build && docker build .",
+    "specs": "playwright test",
     "release": "semantic-release"
   },
   "release": {
@@ -37,14 +38,16 @@
     ]
   },
   "dependencies": {
-    "@semantic-release/release-notes-generator": "^10.0.3",
     "react": "",
     "react-dom": ""
   },
   "devDependencies": {
+    "@playwright/test": "",
     "@semantic-release/git": "",
     "@semantic-release/github": "",
     "@semantic-release/npm": "",
+    "@semantic-release/release-notes-generator": "",
+    "@types/node": "",
     "@types/react": "",
     "@types/react-dom": "",
     "@vitejs/plugin-react": "",
