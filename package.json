@@ -9,7 +9,7 @@
     "dev": "vite",
     "test": "tsc && vitest",
     "build": "vite build && docker build .",
-    "specs": "playwright test",
+    "specs": "playwright install --with-deps && playwright test",
     "release": "semantic-release"
   },
   "release": {
