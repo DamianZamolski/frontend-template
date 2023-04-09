@@ -20,6 +20,12 @@ jobs:
         run: pnpm build
       - name: specs
         run: pnpm specs
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: specs-report
+          path: playwright-report/
+          retention-days: 1
       - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
