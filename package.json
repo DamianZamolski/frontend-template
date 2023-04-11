@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "dev": "vite",
     "test": "tsc && vitest",
-    "build": "vite build && docker build .",
+    "build": "vite build && docker build --tag $npm_package_name:$npm_package_version .",
     "specs": "playwright install --with-deps && playwright test",
     "release": "semantic-release"
   },
