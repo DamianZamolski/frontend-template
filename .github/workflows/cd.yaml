@@ -18,6 +18,8 @@ jobs:
         run: pnpm test
       - name: build
         run: pnpm build && docker images
+      - name: run latest tag
+        run: pnpm run-latest-tag
       - name: specs
         run: pnpm specs
       - uses: actions/upload-artifact@v3
