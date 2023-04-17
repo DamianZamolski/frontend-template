@@ -9,7 +9,7 @@
     "dev": "vite",
     "test": "tsc && vitest",
     "build": "vite build && docker build --tag $npm_package_name .",
-    "run-latest-tag": "docker run --publish 8080:80 $npm_package_name:latest",
+    "run-latest-tag": "docker run --detach --publish 8080:80 $npm_package_name:latest",
     "specs": "playwright install --with-deps && playwright test",
     "release": "semantic-release && docker tag $npm_package_name damianzamolski/$npm_package_name:$npm_package_version && docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD && docker push damianzamolski/$npm_package_name:$npm_package_version"
   },
