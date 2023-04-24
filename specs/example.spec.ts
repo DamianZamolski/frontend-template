@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 
 test('localhost', async ({page}) => {
 	await page.goto('localhost:8080');
-	await expect(page).toHaveTitle(/Vite + React + TS/);
+	await expect(page).toHaveTitle(/Vite \+ React \+ TS/);
 });
 
 test('has title', async ({page}) => {
